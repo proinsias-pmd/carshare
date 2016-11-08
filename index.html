@@ -2,21 +2,343 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Share journeys together to save fuel, cost and time.">
+    <meta name="author" content="aristocats">
+
+    <link rel="shortcut icon" href="img/logoplain.png"> <!--favicon-->
+
+    <title>CarShare - Save Fuel</title>
+
     <link rel="stylesheet" href="css/bootstrap.css">    <!-- bootstrap stylesheet -->
     <link rel="stylesheet" href="css/style.css">    <!-- our stylesheet for colours, typography and custom spacing -->
-    
-    <title>Document</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">    <!--stylesheet for icons-->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,300' rel='stylesheet' type='text/css'>
+
 </head>
+
 <body>
-    
-    <h1>CarShare</h1>
-    
-    
-    
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> <!-- jquery from cdn -->
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
+    <nav class="menu" id="theMenu">  <!-- the menu -->
+
+		<div class="menu-wrap">
+
+			<h2 class="logo"><a href="index.html#home">CarShare</a></h2>
+
+			<a href="#" class="smoothScroll">Home</a>
+			<a href="#howitworks" class="smoothScroll" id="about">How CarShare Works</a>
+			<a href="#location" class="smoothScroll" id="locations">Locations</a>
+			<a href="#contact" class="smoothScroll" id="contact">Contact</a>
+			<a href="#"><i class="icon-facebook" id="facebook"></i></a>
+			<a href="#"><i class="icon-twitter" id="twitter"></i></a>
+			<a href="#"><i class="icon-envelope" id="email"></i></a>
+		</div>
+
+		<!-- Menu button -->
+		<div id="menuToggle"><i class="icon-reorder"> <span>Menu</span></i></div>
+	</nav>
+    <!-- Start of the header section -->
+    <div class="herospace">
+        <div class="container">
+            <header>
+            <div class="row">
+                <!-- Logo Placeholder -->
+                <div class="col-sm-12 col-xs-12 headerlogo">
+                  <img class="img-responsive img-circle" id="logoplaceholder" src="img/logoplain.png" alt="CarShare Plain Logo">
+                </div>
+            </div>
+              <!-- CarShare Heading,CTA, Logo and Tagline -->
+            <div class="col-sm-2 col-xs-offset-5 col-sm-offset-5 mainlogo center-block">
+                <img class="img-responsive img-circle" src="img/logo.png" alt="CarShare Logo">
+                <h1 class="text-center">CarShare</h1>
+            </div>
+            <div class="col-sm-3 maininfo">
+                <p class="text-center">Sign up for CarShare.<br>Save fuel. Save time.</p>
+            </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="herobuttons text-center">
+        <ul class="text-center">
+          <li> <a href="#" class="btn btn-lg btn-success btn-lg" type="button">Sign Up</a></li>
+          <li><a href="#" class="btn btn-primary btn-lg" type="button">Learn More</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+        </header>
+        </div>
+    </div>
+
+    <div class="howitworks" id="howitworks">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1">
+                  <iframe width="500" height="350" src="https://www.youtube.com/embed/5hu8_icGZjo?showinfo=0" frameborder="0" allowfullscreen></iframe>                </div>
+                <div class="col-lg-5 howitdescription">
+                    <h2>How CarShare Works</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus laborum, pariatur quaerat molestias facilis minus sequi officiis, id esse vitae, ipsa fugit natus odio saepe consectetur numquam soluta nobis eos!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus laborum, pariatur quaerat molestias facilis minus sequi officiis, id esse vitae, ipsa fugit natus odio saepe consectetur numquam soluta nobis eos!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus laborum, pariatur quaerat molestias facilis minus sequi officiis, id esse vitae, ipsa fugit natus odio saepe consectetur numquam soluta nobis eos!</p>
+                    <a class="btn btn-default btn-lg center-block">Learn More</a>
+                </div>
+            </div>
+          </div>
+          <div class="container howitdescription2">
+            <div class="row">
+              <div class="col-lg-5 col-lg-offset-1">
+                  <h2>How CarShare Works</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus laborum, pariatur quaerat molestias facilis minus sequi officiis, id esse vitae, ipsa fugit natus odio saepe consectetur numquam soluta nobis eos!</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus laborum, pariatur quaerat molestias facilis minus sequi officiis, id esse vitae, ipsa fugit natus odio saepe consectetur numquam soluta nobis eos!</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus laborum, pariatur quaerat molestias facilis minus sequi officiis, id esse vitae, ipsa fugit natus odio saepe consectetur numquam soluta nobis eos!</p>
+                  <a class="btn btn-default btn-lg center-block">Learn More</a>
+              </div>
+              <div class="col-lg-5  howitimg">
+                <div class="howit-carousel text-center">
+<div id="myCarousel" class="carousel slide" data-interval="1900" data-ride="carousel">
+  <!-- Carousel indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+   <!-- Carousel items -->
+    <div class="carousel-inner">
+        <div class="active item carousel-fade" style="background-image: url(img/how-it-works-01.png); background-size: contain">
+
+            <div class="carousel-caption">
+
+            </div>
+        </div>
+        <div class="item carousel-fade" style="background-image: url(img/how-it-works-02.png); background-size: contain">
+            <div class="carousel-caption">
+            </div>
+        </div>
+        <div class="item carousel-fade" style="background-image: url(img/how-it-works-03.png); background-size: contain">
+            <div class="carousel-caption">
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="border">
+
+ <div class="row">
+
+     <section class="col-md-1">
+       </section>
+
+   <section class="col-md-4" id="location">
+
+           <h2>Our locations</h2>
+
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus semper neque, vitae consectetur mi porttitor ut. Pellentesque ut diam ligula. Nullam venenatis ligula vitae odio fringilla aliquet. Cras iaculis lacus et interdum dapibus. Ut velit risus, luctus sed sodales vel, egestas quis tortor. </p><br/><br/>
+
+           <a href="#SignUpNow" class="btn btn-primary <!--btn-block--> btn-lg" type="submit">Sign Up Now</a>
+
+       </section><!--close section-->
+<br>
+       <aside class="col-md-6" id="map">
+
+           <div class="text-center">
+             <iframe width="90%" height="350" src="http://www.maps.ie/create-google-map/map.php?width=100%&amp;height=300&amp;hl=en&amp;q=1%20South%20Lotts%20Road%2C%20Dublin%2C%20Ireland+(Carshare)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="http://www.mapsdirections.info/fr/creez-une-carte-google/">widget html carte google map</a> by <a href="http://www.mapsdirections.info/fr/">Carte Google Maps</a></iframe>
+           </div>
+
+
+       </aside><!--close aside-->
+
+       <section class="col-md-1">
+       </section>
+
+  </div><!--close row-->
+
+</div><!--close container-->
+
+<div class="container">
+
+ <section>
+
+   <div class="row">
+
+       <header class="text-center">
+
+               <h2>User Experiences</h2>
+
+     </header><!--close header-->
+
+   </div><!--close row-->
+
+   <div class="row">
+
+     <article class="col-md-3">
+
+           <img src="img/profileimg4.png" alt="carshare user Bradley" height="200" class="img-rounded center-block">
+         <h3>Bradley</h3>
+         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum orci in luctus ornare. Proin faucibus, metus non consequat rhoncus, sem justo ultricies felis, quis sagittis ex ipsum sed massa."</p>
+
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <br/><br/><br/>
+
+       </article><!--close article-->
+
+     <article class="col-md-3">
+
+         <img src="img/profileimg2.png" alt="carshare user Sarah" height="200" class="img-rounded center-block">
+           <h3>Sarah</h3>
+       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum orci in luctus ornare. Proin faucibus, metus non consequat rhoncus, sem justo ultricies felis, quis sagittis ex ipsum sed massa."</p>
+
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              <br/><br/><br/>
+
+       </article><!--close article-->
+
+       <article class="col-md-3">
+
+           <img src="img/profileimg1.png" alt="carshare user Ashley" height="200" class="img-rounded center-block">
+           <h3>Ashley</h3>
+               <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum orci in luctus ornare. Proin faucibus, metus non consequat rhoncus, sem justo ultricies felis, quis sagittis ex ipsum sed massa."</p>
+
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <br/><br/><br/>
+
+       </article><!--close article-->
+
+     <article class="col-md-3">
+
+           <img src="img/profileimg3.png" alt="carshare user Darragh" height="200" class="img-rounded center-block">
+           <h3>Darragh</h3>
+       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum orci in luctus ornare. Proin faucibus, metus non consequat rhoncus, sem justo ultricies felis, quis sagittis ex ipsum sed massa."</p>
+
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              <br/><br/><br/>
+
+       </article><!--close article-->
+
+       </div><!--close row-->
+
+   </section><!--close section-->
+
+   </div><!--close row-->
+
+   <div class="row createaccount" id="SignUpNow">
+ 		<div class="col-md-3">
+ 		</div>
+ 		<div class="col-md-6">
+ 			<h3 class="text-center">
+ 				Create Account
+ 			</h3>
+    <div class="acccreate">
+ 			<form role="form">
+ 				<div class="form-group">
+
+ 					<label for="exampleInputEmail1">
+ 						Email address
+ 					</label>
+          <br>
+ 					<input type="email" class="form-control" id="InputEmail" placeholder="Enter your email here" required>
+ 				</div>
+ 				<div class="form-group">
+
+ 					<label for="exampleInputPassword1">
+ 						Password
+ 					</label>
+          <br>
+ 					<input type="password" class="form-control" id="InputPassword" min="6" placeholder="Choose a password" required>
+ 				</div>
+ 				<div class="form-group">
+ 					<p class="help-block">
+ 						* Password must contain a number and at least 6 characters.
+ 					</p>
+ 				</div>
+ 				<div class="checkbox">
+
+ 					<label>
+ 						<input type="checkbox" required> I agree to CarShare Terms of Service.
+ 					</label>
+ 				</div>
+ 				<button type="submit" class="btn btn-default submitbtn">
+ 					Create Account
+ 				</button>
+ 			</form>
+    </div>
+ 		</div>
+ 		<div class="col-md-3">
+ 		</div>
+  </div>
+  <footer>
+    <div class="row">
+
+      <div class="col-md-12 socialbox">
+        <div class="socialicons text-center">
+          <ul class="social">
+            <li id="facebook"><a href="#"><img src="img/facebook.svg" alt="facebook-logo"/></a></li>
+            <span></span>
+            <li id="twitter" class="center-block"><a class="center-block" href="#"><img src="img/twitter.svg" alt="twitter-logo"/></a></li>
+            <span></span>
+            <li id="instagram"><a href="#"><img src="img/instagram.svg" alt="instagram-logo"/></a></li>
+          </ul>
+      </div>
+      </div>
+
+    </div>
+
+      <div class="row links">
+
+        <div class="col-md-12">
+          <div class="linksbox">
+        <ul class="text-center center-block">
+          <li><a href="#">HOME</a></li>
+          <span></span>
+          <li><a href="#">ABOUT</a></li>
+          <span></span>
+          <li><a href="#">CONTACT</a></li>
+          <span></span>
+          <li><a href="#">DOWNLOAD</a></li>
+        </ul>
+        </div>
+        </div>
+
+      </div>
+      <div class="row team">
+        <div class="col-md-12">
+          <p class="text-center">
+            &copy; Aristocats 2016 <span>Brenda Doran</span> <span>Proinsias Matthews</span> <span>Sanja Trinki</span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+    </footer>
+
+
+    <!-- jquery from cdn plus scripts for menu-->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+	  <script src="js/main.js"></script>
+
+    <!--LIVERELOAD SCRIPT. REMOVE BEFORE SUBMIT!! -->
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
-
 </html>
